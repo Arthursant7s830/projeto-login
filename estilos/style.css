@@ -65,7 +65,7 @@ div#formulario>p {
     font-size: 0.8em;
 }
 
-form > div.campo {
+form>div.campo {
     background-color: #5f2c82;
     border: 3px solid #5f2c82;
     width: 100%;
@@ -76,7 +76,7 @@ form > div.campo {
 
 }
 
-div.campo > label {
+div.campo>label {
     display: none;
 }
 
@@ -87,19 +87,19 @@ span.material-symbols-outlined {
     padding: 5px;
 }
 
-div.campo > input {
+div.campo>input {
     background-color: #a1eeeb;
     color: white;
     font-size: 1em;
-    width:calc(100% - 42px) ;
+    width: calc(100% - 42px);
     height: 100%;
     border: 0px;
     border-radius: 8px;
     padding: 4px;
-    transform: translate(43px,-42px);
+    transform: translate(43px, -42px);
 }
 
-div.campo > input:focus-within {
+div.campo>input:focus-within {
     background-color: white;
 }
 
@@ -135,14 +135,11 @@ form>a.botao {
 }
 
 form>a.botao:hover {
-background-color: #347e7b;
-color: white;
+    background-color: #347e7b;
+    color: white;
 }
 
 
-form > a.botao > span {
+form>a.botao>span {
     font-size: .9em;
 }
-
-
-
