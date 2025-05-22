@@ -1,13 +1,20 @@
+alert('Olá!');// mensagem de boas vindas
+
 document.getElementById('entrar').addEventListener('click', function (e) {
-  e.preventDefault();
+  e.preventDefault(); // Impede o envio do formulário
 
-  let usuario = document.getElementById('ilogin').value;
-  let senha = document.getElementById('isenha').value;
+  let email = document.getElementById('ilogin').value.trim();
+  let senha = document.getElementById('isenha').value.trim();
 
-  if (usuario === '' || senha === '') {
-    alert('Por favor, preencha todos os campos.');
+  if (email === '' || senha === '') {
+    alert('Por favor, preencha todos os campos!');
   } else {
     alert('Login simulado com sucesso!');
-    // Aqui você pode redirecionar ou validar no back-end futuramente
   }
-});
+}) // conclui ou impede login, dependendo dos dados serem inseridos ou não
+
+window.onload = function () {
+  document.getElementById('ilogin').focus();
+}// abre a tela de login com foco já no email
+
+
